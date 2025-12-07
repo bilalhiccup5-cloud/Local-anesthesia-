@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Anesthetics: Quick Study Guide</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #212529;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .accordion-item {
+            border: 1px solid var(--border-color);
+            margin-bottom: 10px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .accordion-header:hover {
+            background-color: #0056b3;
+        }
+
+        .accordion-content {
+            padding: 0 15px;
+            background-color: var(--card-background);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+        }
+        
+        .accordion-content.active {
+            max-height: 1000px; /* Large enough to show content */
+            padding: 15px;
+        }
+
+        .accordion-header .icon {
+            font-size: 1.2em;
+            transition: transform 0.3s;
+        }
+
+        .accordion-header.active .icon {
+            transform: rotate(45deg);
+        }
+
+        /* Styling for content within sections */
+        .accordion-content h3 {
+            color: var(--primary-color);
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        .accordion-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .accordion-content ul li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .accordion-content ul li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .stage-box {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .merit { color: green; }
+        .demerit { color: red; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🧠 General Anesthetics: Quick Study Guide</h1>
+    </header>
+
+    <div id="study-guide">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Definition & Key Characteristics 🔑 <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>General Anesthesia (GA) is a **reversible depressant of the CNS** used for surgical operations without pain or unpleasant side effects.</p>
+                <h3>GA is Characterized By:</h3>
+                <ul>
+                    <li>Unconsciousness</li>
+                    <li>Analgesia (Pain relief)</li>
+                    <li>Amnesia (Memory loss)</li>
+                    <li>Skeletal muscle relaxation</li>
+                    <li>Loss of reflexes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Stages of General Anesthesia 🚦 <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="stage-box">
+                    <strong>1. Stage of Analgesia:</strong>
+                    <ul>
+                        <li>Starts at administration, lasts until loss of consciousness.</li>
+                        <li>Patient feels a **dream-like state**.</li>
+                        <li>Reflexes and respiration remain normal.</li>
+                    </ul>
+                </div>
+                <div class="stage-box">
+                    <strong>2. Stage of Delirium (Excitement):</strong>
+                    <ul>
+                        <li>From loss of consciousness to onset of irregular respiration.</li>
+                        <li>**Apparent excitement**, increased muscle tone, tightly closed jaws.</li>
+                        <li>Heart rate and BP may rise.</li>
+                    </ul>
+                </div>
+                <div class="stage-box">
+                    <strong>3. Stage of Surgical Anesthesia (4 Planes):</strong>
+                    <ul>
+                        <li>From onset of irregular respiration to cessation of spontaneous breathing.</li>
+                        <li><strong>Plane 1:</strong> Eyes become fixed.</li>
+                        <li><strong>Plane 2:</strong> Loss of corneal and laryngeal reflexes.</li>
+                        <li><strong>Plane 3:</strong> Pupil starts dilating, loss of light reflex.</li>
+                        <li><strong>Plane 4:</strong> Dilated pupil, decreased muscle tone, BP falls.</li>
+                    </ul>
+                </div>
+                <div class="stage-box">
+                    <strong>4. Stage of Medullary Paralysis:</strong>
+                    <ul>
+                        <li>Respiratory and vasomotor control ceases, leading to **Death**.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Potency & Pharmacokinetic Principles 🧪 <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <h3>Minimum Alveolar Concentration (MAC)</h3>
+                <p>The concentration at which <strong>50% of subjects have no movement response to a surgical stimulus</strong> (skin incision). It's different for each inhaled agent.</p>
+
+                <h3>Governing Characteristics of Inhalational Anesthetics</h3>
+                <ul>
+                    <li><strong>Oil:Gas Partition Coefficient (Fat Solubility):</strong> A measure of anesthetic **POTENCY**. Higher solubility $\rightarrow$ greater anesthetic action.</li>
+                    <li><strong>Blood:Gas Partition Coefficient (Blood Solubility):</strong> Lower B/G coefficient $\rightarrow$ **rapid induction & recovery**.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Classification of General Anesthetics 🏷️ <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <h3>Inhalational Anesthetics (Volatile Liquids)</h3>
+                <ul>
+                    <li>Halothane, Isoflurane, Enflurane</li>
+                    <li>Sevoflurane, Desflurane, Methoxyflurane</li>
+                </ul>
+                <h3>Inhalational Anesthetics (Gases)</h3>
+                <ul>
+                    <li>Nitrous Oxide, Cyclopropane</li>
+                </ul>
+                <h3>Intravenous Anesthetics</h3>
+                <ul>
+                    <li><strong>Barbiturates:</strong> Thiopental</li>
+                    <li><strong>Benzodiazepines:</strong> Midazolam, Diazepam</li>
+                    <li><strong>Dissociative Agents:</strong> Ketamine (Inhibits NMDA)</li>
+                    <li><strong>Opioid Analgesics:</strong> Morphine, Fentanyl</li>
+                    <li><strong>Misc. Sedative-Hypnotics:</strong> Etomidate, Propofol</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Mechanism of Action (Receptors) 🧬 <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <ul>
+                    <li><strong>Potentiated (Increased Effect):</strong> GABA–A receptor, Glycine receptors (e.g., Halothane, Propofol, Enflurane, Sevoflurane).</li>
+                    <li><strong>Inhibited (Blocked):</strong> NMDA receptors (e.g., Ketamine, Nitrous Oxide).</li>
+                    <li>Also affects neuronal nicotinic receptors and 5-HT3 receptors.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Pre-Anaesthetic Medication 💊 <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Drugs used **before** anesthesia to make it pleasant, safe, and prevent complications.</p>
+                <ul>
+                    <li><strong>To relieve anxiety:</strong> Benzodiazepines</li>
+                    <li><strong>To provide analgesia and amnesia:</strong> Morphine</li>
+                    <li><strong>To control secretions/prevent aspiration:</strong> Atropine</li>
+                    <li><strong>To prevent P.O. Nausea/Vomiting:</strong> Antiemetics</li>
+                    <li><strong>To control infection:</strong> Antibiotics</li>
+                    <li><strong>To induce sedation/reduce metabolic rate:</strong> Sedatives</li>
+                    <li><strong>To provide hemodynamic stability:</strong> I/V fluids</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Halothane: Merits & Demerits ⚠️ <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <h3><span class="merit">Merits (+)</span></h3>
+                <ul>
+                    <li class="merit">Potent anesthetic agent.</li>
+                    <li class="merit">No stage of excitement.</li>
+                    <li class="merit">Not irritant to respiratory passage; good for children and asthmatics.</li>
+                    <li class="merit">Produces hypotension, reducing blood loss.</li>
+                    <li class="merit">Potentiates muscle relaxation (e.g., by tubocurarine).</li>
+                </ul>
+                <h3><span class="demerit">Demerits (-)</span></h3>
+                <ul>
+                    <li class="demerit">Very low margin of safety.</li>
+                    <li class="demerit">Sensitizes myocardium to adrenaline (causing dysrhythmias).</li>
+                    <li class="demerit">Causes hypotension and bradycardia; depresses respiration.</li>
+                    <li class="demerit">Poor analgesic (co-administered with Nitrous Oxide).</li>
+                    <li class="demerit">Contraindicated in labor (decreases uterine contractions).</li>
+                    <li class="demerit">Can cause **malignant hyperthermia** & **Hepatitis**.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Nitrous Oxide: Merits & Demerits ☁️ <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <h3><span class="merit">Merits (+)</span></h3>
+                <ul>
+                    <li class="merit">Non-irritant to respiratory tract.</li>
+                    <li class="merit">Smooth and rapid induction and recovery.</li>
+                    <li class="merit">Powerful analgesic (used in labor/burns dressing).</li>
+                    <li class="merit">Least hepatotoxic and least cardiac depressant.</li>
+                    <li class="merit">Does not cause respiratory depression.</li>
+                    <li class="merit">Used as **adjuvant** to more potent anesthetics.</li>
+                </ul>
+                <h3><span class="demerit">Demerits (-)</span></h3>
+                <ul>
+                    <li class="demerit">Not a potent general anesthetic (needs combination).</li>
+                    <li class="demerit">Inadequate muscle relaxation.</li>
+                    <li class="demerit">Moves rapidly, causing **air pockets to expand** (e.g., in abdomen, lung, or pleura $\rightarrow$ pneumothorax).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const headers = document.querySelectorAll('.accordion-header');
+
+        headers.forEach(header => {
+            header.addEventListener('click', function() {
+                // Toggle the 'active' class on the header
+                this.classList.toggle('active');
+
+                // Get the content element
+                const content = this.nextElementSibling;
+                
+                // Toggle the 'active' class on the content
+                content.classList.toggle('active');
+
+                // Close all other open sections
+                headers.forEach(otherHeader => {
+                    if (otherHeader !== this && otherHeader.classList.contains('active')) {
+                        otherHeader.classList.remove('active');
+                        otherHeader.nextElementSibling.classList.remove('active');
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
